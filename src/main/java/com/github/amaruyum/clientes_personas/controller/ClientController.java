@@ -20,7 +20,7 @@ import lombok.RequiredArgsConstructor;
 
 
 @RestController
-@RequestMapping("/clients")
+@RequestMapping("/clientes")
 @RequiredArgsConstructor
 public class ClientController {
     
@@ -46,10 +46,10 @@ public class ClientController {
         }
     }
 
-    @PutMapping("/{id}")
-    public ResponseEntity<?> update(@PathVariable Long id, @RequestBody Client client) {
+    @PutMapping("/{identification}")
+    public ResponseEntity<?> update(@PathVariable Long identification, @RequestBody Client client) {
         try {
-            Client updateClient = clientService.update(id, client);
+            Client updateClient = clientService.update(identification, client);
             return ResponseEntity.ok(updateClient);
         } catch (EntityNotFoundException e) {
             return ResponseEntity.notFound().build();
