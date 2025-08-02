@@ -28,9 +28,9 @@ Este microservicio forma parte de la solucion de la prueba tecnica backend java.
 ./mvnw test
 
 ## Coleccion Postman
-
+[Coleccion Postman](./Reto_Tecnico_Java.postman_collection.json)
 ## DATABASE
-
+[BaseDatos.sql](./BaseDatos.sql)
 
 ## Falta por implementar 
 - El despliegue mediante Docker 
