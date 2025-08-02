@@ -1,4 +1,4 @@
-[Reto Tecnico Java.postman_collection.json](https://github.com/user-attachments/files/21555742/Reto.Tecnico.Java.postman_collection.json)# Microservicio: Gestion de Persona-Cliente
+# Microservicio: Gestion de Persona-Cliente
 
 Este microservicio forma parte de la solucion de la prueba tecnica backend java. Se encarga del mantenimiento de persona/cliente.
 
