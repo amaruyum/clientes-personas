@@ -1,0 +1,522 @@
+{
+	"info": {
+		"_postman_id": "5ec7a9ce-7798-4113-baa4-316c99f6aea6",
+		"name": "Reto Tecnico Java",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47239207",
+		"_collection_link": "https://amaruyum-1937863.postman.co/workspace/atik-yumbay's-Workspace~bab58821-49d0-418e-880b-62e466ad703f/collection/47239207-5ec7a9ce-7798-4113-baa4-316c99f6aea6?action=share&source=collection_link&creator=47239207"
+	},
+	"item": [
+		{
+			"name": "Cliente Persona",
+			"item": [
+				{
+					"name": "Crear Cliente Juan",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"nombre\": \"Juan Osorio\",\n  \"genero\": \"Masculino\",\n  \"edad\": 40,\n  \"identificacion\": \"1122334455\",\n  \"direccion\": \"13 junio y Equinoccial\",\n  \"telefono\": \"098874587\",\n  \"contraseña\": \"1245\",\n  \"estado\": true\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Cliente Jose",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\n    {\n        \"name\": \"Jose Lema\",\n        \"gender\": \"Masculino\",\n        \"age\": 30,\n        \"identification\": \"0102030405\",\n        \"address\": \"Otavalo sn y principal\",\n        \"phone\": \"098254785\",\n        \"password\": \"1234\",\n        \"status\": true\n    }\n   \n\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Cliente Marianela",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\n   {\n        \"name\": \"Marianela Montalvo\",\n        \"gender\": \"Femenino\",\n        \"age\": 28,\n        \"identification\": \"0607080910\",\n        \"address\": \"Amazonas y NNUU\",\n        \"phone\": \"097548965\",\n        \"password\": \"5678\",\n        \"status\": true\n    }\n    \n   \n\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista de Clientes",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista de Cliente por id",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/clientes/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Cliente",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Jose Lema\",\n  \"gender\": \"Masculino\",\n  \"age\": 31,\n  \"identification\": \"0102030405\",\n  \"address\": \"Otavalo sn y principal, casa nueva\",\n  \"phone\": \"098254785\",\n  \"password\": \"nueva1234\",\n  \"status\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/clientes/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Cliente por Id",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\n"
+						},
+						"url": {
+							"raw": "http://localhost:8080/clientes/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cuenta Movimiento",
+			"item": [
+				{
+					"name": "Crear Cuentas 478758",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"accountNumber\": \"478758\",\n  \"accountType\": \"Ahorro\",\n  \"initialBalance\": 2000,\n  \"accountStatus\": true,\n  \"clientIdentification\": \"0102030405\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/cuentas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Cuentas 225487",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"accountNumber\": \"225487\",\n  \"accountType\": \"Corriente\",\n  \"initialBalance\": 100,\n  \"accountStatus\": true,\n  \"clientIdentification\": \"0607080910\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/cuentas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Cuentas 495878",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"accountNumber\": \"495878\",\n  \"accountType\": \"Ahorros\",\n  \"initialBalance\": 0,\n  \"accountStatus\": true,\n  \"clientIdentification\": \"1122334455\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/cuentas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Cuentas 496825",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"accountNumber\": \"496825\",\n  \"accountType\": \"Ahorros\",\n  \"initialBalance\": 540,\n  \"accountStatus\": true,\n  \"clientIdentification\": \"0607080910\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/cuentas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Cuentas 585545",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"accountNumber\": \"585545\",\n  \"accountType\": \"Corriente\",\n  \"initialBalance\": 1000,\n  \"accountStatus\": true,\n  \"clientIdentification\": \"0102030405\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/cuentas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registrar Movimientos 478758",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"transactionType\": \"Retiro\",\n  \"amount\": 575\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/movimientos/478758",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"movimientos",
+								"478758"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registrar Movimientos 225487",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"transactionType\": \"Depósito\",\n  \"amount\": 600\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/movimientos/225487",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"movimientos",
+								"225487"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registrar Movimientos 495878",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"transactionType\": \"Depósito\",\n  \"amount\": 150\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/movimientos/495878",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"movimientos",
+								"495878"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registrar Movimientos 496825",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"transactionType\": \"Retiro\",\n  \"amount\": 540\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/movimientos/496825",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"movimientos",
+								"496825"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Movimientos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/movimientos/478758",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"movimientos",
+								"478758"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Reporte Fechas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/movimientos/478758/reporte?desde=2025-07-01&hasta=2025-08-03",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"movimientos",
+								"478758",
+								"reporte"
+							],
+							"query": [
+								{
+									"key": "desde",
+									"value": "2025-07-01"
+								},
+								{
+									"key": "hasta",
+									"value": "2025-08-03"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
